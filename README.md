@@ -1,1 +1,1 @@
-# Magnitude-Phase-Aware-Spectral-Feature-Compression-network-For-Compressed-Music-Restoration
+# Magnitude-Phase-Aware Adaptive Spectral Compression network For Compressed Music Restoration
