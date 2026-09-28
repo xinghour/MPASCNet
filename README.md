@@ -88,8 +88,7 @@ python data/create_train/moisesdb_preprocess.py
 python data/create_train/musdb_preprocess.py
 ```
 
-After preprocessing, merge the two datasets. MoisesDB is used as the base dataset, while the MUSDB18-HQ HDF5 files of the overlapping stem categories are appended to the corresponding MoisesDB categories with continuous file indices. The MUSDB18-HQ mixture files are added separately.
-
+After preprocessing, merge the two datasets.
 ```bash
 python data/create_train/merge.py --moises_dir path/to/moises_hdf5 --musdb_dir path/to/musdb18hq_hdf5 --output_dir path/to/training_data
 ```
@@ -101,7 +100,7 @@ During training, active stems are randomly sampled and mixed, and MP3 compressio
 The validation data used during training can be prepared with:
 
 ```bash
-python data/create_val.py --data_dir path/to/validation_source --output_dir path/to/validation_data
+python data/create_val.py --data_dir path/to/training_data --output_dir path/to/validation_data
 ```
 
 ### Training
