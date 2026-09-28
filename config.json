@@ -1,0 +1,51 @@
+{
+    "gpu_ids": [0],
+    "batch_size": 2,
+    "learning_rate": 0.0001,
+    "adam_b1": 0.8,
+    "adam_b2": 0.99,
+    "lr_decay": 0.99,
+    "seed": 42,
+
+    "feature_dim": 128,
+    "num_layers": 6,
+    "num_heads": 8,
+    "input_drop": 0.0,
+    "attention_drop": 0.0,
+
+    "asc_inner_dim": 64,
+    "asc_num_heads": 4,
+
+    "compress_factor": 0.3,
+
+    "sampling_rate": 44100,
+    "segments": 3,
+    "n_fft": 882,
+    "hop_size": 441,
+    "win_size": 882,
+
+    "codec_type": "mp3",
+    "codec_options": {
+        "bitrate": "random",
+        "compression": "random",
+        "complexity": "random",
+        "vbr": "random"
+    },
+
+    "num_stems": 8,
+    "snr_range": [-10, 10],
+    "num_samples": 10000,
+
+    "use_visqol": false,
+
+    "mag_weight": 1.2,
+    "pha_weight": 0.3,
+    "com_weight": 0.1,
+    "stft_weight": 0.1,
+    "time_weight": 0.2,
+
+    "wandb_project": "MPASCNet",
+    "wandb_entity": null,
+    "wandb_name": "MPASCNet For Compressed Music Restoration",
+    "wandb_mode": "offline"
+}
