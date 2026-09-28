@@ -1,2 +1,1 @@
-# Magnitude-Phase-Aware Adaptive
-# Spectral Compression network For Compressed Music Restoration
+# Magnitude-Phase-Aware Adaptive Spectral Compression For Compressed Music Restoration
