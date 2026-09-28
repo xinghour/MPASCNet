@@ -30,11 +30,11 @@ The following codec dependencies were used for MP3 data generation:
 conda install -c conda-forge ffmpeg=5.0.1 sox=14.4.2 lame=3.100
 ```
 
-ViSQOL is an optional dependency for perceptual quality evaluation. Please follow the installation instructions in the [official ViSQOL repository]({{VISQOL_URL}}) if ViSQOL evaluation is required.
+ViSQOL is an optional dependency for perceptual quality evaluation. Please follow the installation instructions in the [official ViSQOL repository](https://github.com/google/visqol) if ViSQOL evaluation is required.
 
 ### Pretrained Checkpoint
 
-The pretrained MPASCNet checkpoint is available on [Hugging Face]({{CHECKPOINT_URL}}).
+The pretrained MPASCNet checkpoint is available on [Hugging Face](https://huggingface.co/Xinghour/MPASCNet).
 
 Place the downloaded checkpoint under:
 
@@ -67,8 +67,8 @@ MPASCNet is trained using **MUSDB18-HQ** and **MoisesDB** following the data pre
 
 The datasets can be obtained from:
 
-- [MUSDB18-HQ]({{MUSDB18HQ_URL}})
-- [MoisesDB]({{MOISESDB_URL}})
+- [MUSDB18-HQ](https://zenodo.org/records/3338373)
+- [MoisesDB](https://music.ai/research/)
 
 The preprocessing scripts are located in:
 
@@ -79,7 +79,7 @@ data/create_train/
 └── musdb_preprocess.py
 ```
 
-The MUSDB18-HQ and MoisesDB preprocessing scripts are adapted from [Apollo-data-preprocess]({{APOLLO_PREPROCESS_URL}}).
+The MUSDB18-HQ and MoisesDB preprocessing scripts are adapted from [Apollo-data-preprocess](https://github.com/JusperLee/Apollo-data-preprocess).
 
 Set the corresponding dataset and output paths in `moisesdb_preprocess.py` and `musdb_preprocess.py`, and run:
 
@@ -130,7 +130,7 @@ Training uses early stopping when the validation SI-SNR does not improve for 20 
 
 ### Evaluation Data
 
-The evaluation set is constructed from **MedleyDB**, which can be obtained from the [official MedleyDB download page]({{MEDLEYDB_URL}}).
+The evaluation set is constructed from **MedleyDB**, which can be obtained from the [official MedleyDB download page](https://medleydb.weebly.com/downloads.html).
 
 The evaluation data preparation scripts are located in:
 
@@ -178,16 +178,10 @@ python losses/visqol.py --eval_dir path/to/evaluation_data --enhanced_dir path/t
 
 ## Acknowledgements
 
-The training data preprocessing scripts are adapted from [Apollo-data-preprocess]({{APOLLO_PREPROCESS_URL}}).
+The training data preprocessing scripts are adapted from [Apollo-data-preprocess](https://github.com/JusperLee/Apollo-data-preprocess).
 
 MPASCNet builds upon ideas from prior work on magnitude-phase modeling, adaptive spectral feature compression, and spectro-temporal modeling. We thank the authors and contributors of Apollo, MP-SENet, Spectral Feature Compression, MUSDB18-HQ, MoisesDB, and MedleyDB.
 
 ## License
 
-The original MPASCNet source code is released under the Apache License 2.0.
-
-The files `data/create_train/moisesdb_preprocess.py` and `data/create_train/musdb_preprocess.py` are adapted from Apollo-data-preprocess and remain subject to its Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license.
-
-The pretrained checkpoint was trained using datasets with non-commercial usage restrictions and is provided for research and non-commercial use. Users are responsible for complying with the licenses and terms of the corresponding datasets.
-
-See `LICENSE` and `THIRD_PARTY_NOTICES.md` for details.
+This project is released under the Apache License 2.0.
