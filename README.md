@@ -9,7 +9,7 @@ PyTorch implementation of **MPASCNet**, a magnitude-phase-aware adaptive spectra
 ## Results
 
 <p align="center">
-  <img src="assets/result_table.png" width="100%">
+  <img src="assets/result_table.svg" width="100%">
 </p>
 
 ## Preparation
