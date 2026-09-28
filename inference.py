@@ -302,7 +302,7 @@ def main():
     input_group = parser.add_mutually_exclusive_group(required=True)
     input_group.add_argument('--input')
     input_group.add_argument('--eval_dir')
-    parser.add_argument('--checkpoint_path', default='cp_model')
+    parser.add_argument('--checkpoint_path', default='checkpoint')
     parser.add_argument('--checkpoint_name', default='best')
     parser.add_argument('--config', default='config.json')
     parser.add_argument('--output_dir', default='inference_results')
