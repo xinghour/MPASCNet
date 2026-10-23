@@ -184,3 +184,19 @@ MPASCNet builds upon ideas from prior work on magnitude-phase modeling, adaptive
 ## License
 
 This project is released under the Apache License 2.0.
+
+## Citation
+
+If you find MPASCNet useful in your research, please cite our paper:
+
+```bibtex
+@misc{deng2026mpascnet,
+  title         = {MPASCNet: Magnitude-Phase-Aware Adaptive Spectral Compression for Compressed Music Restoration},
+  author        = {Deng, Xinlong and Xia, Yu and Kong, Qiuqiang and Cao, Yin and Jiang, Jie},
+  year          = {2026},
+  eprint        = {2610.16416},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SD},
+  url           = {https://arxiv.org/abs/2610.16416}
+}
+```
